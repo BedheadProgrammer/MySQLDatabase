@@ -5,8 +5,11 @@ Table: Employee
 | Column Name  | Type    |
 
 | id           | int     |
+
 | name         | varchar |
+
 | salary       | int     |
+
 | departmentId | int     |
 
 id is the primary key (column with unique values) for this table.
@@ -20,6 +23,7 @@ Table: Department
 | Column Name | Type    |
 
 | id          | int     |
+
 | name        | varchar |
 
 id is the primary key (column with unique values) for this table. It is guaranteed that department name is not NULL.
@@ -33,9 +37,10 @@ Return the result table in any order.
 The result format is in the following example.
 
 
-+------------+----------+--------+
 | IT         | Jim      | 90000  |
+
 | Sales      | Henry    | 80000  |
+
 | IT         | Max      | 90000  |
-+------------+----------+--------+
+
 Explanation: Max and Jim both have the highest salary in the IT department and Henry has the highest salary in the Sales department.
